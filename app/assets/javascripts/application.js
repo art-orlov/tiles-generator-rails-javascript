@@ -18,7 +18,7 @@
 //= require html2canvas
 
 
-//= require images
+//= require images.js.erb
 
 //= require wall
 //= require renderer

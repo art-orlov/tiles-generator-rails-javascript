@@ -5,5 +5,6 @@ Dir.chdir("#{Rails.root}/app/assets/images/") do
 end
 %>
 
-@image_path = (name) ->
-    <%= images.to_json %>[name]
+window.image_path = function (name) {
+    return <%= images.to_json %>[name];
+}
