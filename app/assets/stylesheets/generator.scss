@@ -1,0 +1,50 @@
+form {
+  padding: 40px 40px 0 40px;
+
+  em {
+    font-weight: bold;
+  }
+
+  ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  label, input {
+    display: inline-block;
+  }
+
+  label {
+    width: 100px;
+  }
+
+  input {
+    width: 40px;
+  }
+}
+
+#result {
+  display: inline-block;
+  margin: 40px;
+  background-color: #eee;
+
+  img {
+    display: block;
+    width: 100px;
+    height: 100px;
+
+    &.angle_0 {}
+    &.angle_90  { transform: rotate(90deg); }
+    &.angle_180 { transform: rotate(180deg); }
+    &.angle_270 { transform: rotate(270deg); }
+  }
+}
+
+#ready_title {
+  padding: 100px 40px 0 40px;
+  font-weight: bold;
+}
+
+#save_image {
+  padding: 40px;
+}
