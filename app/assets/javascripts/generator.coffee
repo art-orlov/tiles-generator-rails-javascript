@@ -8,7 +8,7 @@ class Generator
 
   magic: (wall) ->
     get_tile = (y, x) ->
-      return if (y > 0 && x) > 0 then wall.tiles[y][x] else null
+      return if (y >= 0 && x >= 0) then wall.tiles[y][x] else null
 
     clash_detected = (tile1, tile2, rotation) ->
       return tile1? && tile2 && tile1.vh == tile2.vh && tile1.vh == (rotation % 2)
